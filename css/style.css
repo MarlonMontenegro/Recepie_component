@@ -1,0 +1,240 @@
+/* GOOGLE FONTS - Young Serif */
+@import url('https://fonts.googleapis.com/css2?family=Young+Serif&display=swap');
+/* GOOGLE FONTS - Outfit */
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&family=Young+Serif&display=swap');
+
+/* ====================
+         VARIABLES
+   ====================
+ */
+
+:root {
+
+    /* Colors Primary */
+
+    --Nutmeg: hsl(14, 45%, 36%);
+    --Dark-Raspberry: hsl(332, 51%, 32%);
+
+    /* Colors Neutral */
+
+    --White: hsl(0, 0%, 100%);
+    --Rose-white: hsl(330, 100%, 98%);
+    --Eggshell: hsl(30, 54%, 90%);
+    --Light-Grey: hsl(30, 18%, 87%);
+    --Wenge-Brown: hsl(30, 10%, 34%);
+    --Dark-Charcoal: hsl(24, 5%, 18%);
+
+
+    /* Family Font */
+
+    --Outfit-font-family: "Outfit", sans-serif;
+    --Young-serif: "Young Serif", serif;
+    --Font-size-Paragrapht: 16px
+}
+
+
+/* ====================
+        GLOBAL STYLES
+   ====================
+*/
+body {
+    background-color: var(--Eggshell);
+    font-family: var(--Outfit-font-family);
+    font-size: var(--Font-size-Paragrapht);
+}
+
+h1, h2 {
+    font-family: var(--Young-serif);
+    color: var(--Dark-Charcoal);
+}
+
+/* ====================
+         Recipe
+   ====================
+ */
+
+main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100%;
+}
+
+.main-container {
+    background-color: var(--White);
+    width: auto;
+    height: auto;
+    max-width: 40em;
+    min-height: 100%;
+    border-radius: 10px;
+    padding: 1.5rem;
+}
+
+.img-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 1rem;
+}
+
+.img-container img {
+    width: auto;
+    height: 17rem;
+    border-radius: 10px;
+}
+
+.recipe-container {
+    display: flex;
+    flex-direction: column;
+    padding: 1rem;
+}
+
+.recipe-title p {
+    color: var(--Wenge-Brown);
+    line-height: 1.7;
+    text-align: justify
+}
+
+.preparation-time {
+    background-color: hsla(332, 51%, 32%, 5%);
+    border-radius: 10px;
+    padding: 1rem;
+}
+
+.preparation-time h3 {
+    color: var(--Dark-Raspberry);
+}
+
+.preparation-time li {
+    color: var(--Dark-Raspberry);
+}
+
+.preparation-time li p, .ingredients p {
+    color: var(--Dark-Charcoal);
+}
+
+
+.ingredients, .instructions-container {
+    padding: 0.7rem;
+    border-bottom: 1px solid var(--Nutmeg);
+}
+
+.ingredients h2, .nutrition-container h2, .instructions-container h2 {
+    color: var(--Nutmeg);
+}
+
+.ingredients li {
+    color: var(--Nutmeg);
+}
+
+
+.instructions-container ol {
+    color: var(--Nutmeg);
+    padding: 0;
+    margin-left: 15px;
+}
+
+.instructions-container ol p {
+    color: var(--Dark-Charcoal);
+    text-align: justify;
+    line-height: 1.5;
+}
+
+.instructions-container ol p span {
+    font-weight: 600;
+}
+
+.nutrition-container {
+    padding: 1rem;
+}
+
+.nutrition-values {
+    display: flex;
+    flex-direction: column;
+}
+
+.values {
+    color: var(--Nutmeg);
+    font-weight: 600;
+}
+
+.data {
+    width: 100%;
+    display: flex;
+    gap: 5rem;
+    border-bottom: 1px solid var(--Nutmeg);
+    text-align: justify;
+    padding-left: 1rem;
+    justify-content: space-evenly;
+}
+
+
+/* ====================
+         FOOTER
+   ====================
+*/
+
+
+.attribution {
+    font-size: 11px;
+    text-align: center;
+}
+
+.attribution a {
+    color: hsl(228, 45%, 44%);
+}
+
+
+/* ====================
+         RESPONSIVE
+   ====================
+*/
+
+
+@media only screen and (max-width: 600px) {
+
+    html {
+        width: 10rem;
+    }
+
+
+    body {
+        margin: 0;
+        padding: 0;
+        width: auto;
+        height: auto;
+
+    }
+    main {
+        margin: 0;
+        padding:  0;
+        width: auto;
+        height: auto;
+    }
+
+
+    .main-container {
+        width: 24rem;
+        height: auto;
+        padding: 0;
+        margin-left: 200px;
+    }
+
+    .img-container {
+        margin-right: 1rem;
+        margin-top: -2.5rem;
+    }
+
+    .img-container img {
+        width: auto;
+        height: 12rem;
+    }
+
+    .recipe-container {
+        padding: 2rem;
+        width: 86%;
+    }
+
+
+}
+
